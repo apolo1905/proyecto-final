@@ -1,0 +1,13 @@
+SELECT * FROM donaciones.donante;
+INSERT INTO Donante (Nombre, Cedula, Edad, Sexo, Estado_civil, Tiene_tatuaje, Consume_drogas, Bebe_alcohol, Fuma, Preferencia_sexual, Donde_trabaja, Ultima_vez_dono_sangre, Ultima_prueba_VIH, Ha_estado_resfriado, Ha_recibido_tratamiento_dental, Ha_utilizado_aspirina, Se_siente_bien_de_salud, Ha_tomado_medicamento_hoy, Ha_sido_vacunado)
+VALUES ('Juan Perez', 8998877, 30, 'M', TRUE, TRUE, FALSE, TRUE, FALSE, 'Hetero', 'Banco', '2024-01-15', '2024-07-10', TRUE, FALSE, TRUE, TRUE, FALSE, TRUE);
+
+SELECT * FROM donaciones.solicitud;
+
+INSERT INTO Solicitud (Nombre, Edad, Genero, Tipo_sangre, Cantidad_requerida_ml, Hospital, Departamento_estado, Ciudad, Direccion_hospital, Fecha_requerida, Hora_requerida, Contacto, Nombre_contacto, Relacion_con_paciente, Motivo_solicitud, Tipo_urgencia, Comentarios_adicionales, Estado_solicitud, Fecha_registro, Registrado_por)
+VALUES ('Ana Gonzalez', 45, 'F', 'O+', 500, 'Hospital santo tomas', 'Estado A', 'Ciuda de panama', 'punta pacifica', '2024-08-20', '14:00', 67439263, 'Luis Gonzalez', 'Hermano', 'Cirugía de emergencia', 'Alta', 'Paciente necesita transfusión urgente', 'Pendiente', '2024-08-08', 'Dr. Martinez');
+
+Consultas para Buscar Todos los Registros de la Tabla
+
+SELECT * FROM Donante;
+SELECT * FROM Solicitud;
