@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS Donante (
+    Nombre VARCHAR(10) NOT NULL,
+    Cedula NUMERIC NOT NULL,
+    Edad NUMERIC(2) NOT NULL,
+    Sexo VARCHAR(1) NOT NULL,
+    Estado_civil BOOLEAN NULL,
+    Tiene_tatuaje BOOLEAN NOT NULL,
+    Consume_drogas BOOLEAN NOT NULL,
+    Bebe_alcohol BOOLEAN NOT NULL,
+    Fuma BOOLEAN NOT NULL,
+    Preferencia_sexual VARCHAR(10) NULL,
+    Donde_trabaja VARCHAR(10) NULL,
+    Ultima_vez_dono_sangre DATE NOT NULL,
+    Ultima_prueba_VIH DATE NOT NULL,
+    Ha_estado_resfriado BOOLEAN NOT NULL,
+    Ha_recibido_tratamiento_dental BOOLEAN NULL,
+    Ha_utilizado_aspirina BOOLEAN NOT NULL,
+    Se_siente_bien_de_salud BOOLEAN NULL,
+    Ha_tomado_medicamento_hoy BOOLEAN NOT NULL,
+    Ha_sido_vacunado BOOLEAN NOT NULL
+);
