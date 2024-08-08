@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS Solicitud (
+    Nombre VARCHAR(10) NOT NULL,
+    Edad NUMERIC(2) NOT NULL,
+    Genero VARCHAR(1) NOT NULL,
+    Tipo_sangre VARCHAR(3) NOT NULL,
+    Cantidad_requerida_ml NUMERIC(4) NOT NULL,
+    Hospital VARCHAR(50) NOT NULL,
+    Departamento_estado VARCHAR(20) NOT NULL,
+    Ciudad VARCHAR(10) NOT NULL,
+    Direccion_hospital VARCHAR(60) NOT NULL,
+    Fecha_requerida DATE NOT NULL,
+    Hora_requerida TIME NULL,
+    Contacto NUMERIC NOT NULL,
+    Nombre_contacto VARCHAR(10) NOT NULL,
+    Relacion_con_paciente VARCHAR(20) NOT NULL,
+    Motivo_solicitud VARCHAR(100) NOT NULL,
+    Tipo_urgencia VARCHAR(20) NOT NULL,
+    Comentarios_adicionales VARCHAR(200) NULL,
+    Estado_solicitud VARCHAR(15) NOT NULL,
+    Fecha_registro DATE NOT NULL,
+    Registrado_por VARCHAR(50) NOT NULL
+);
